@@ -17,6 +17,11 @@ def longest_palindrome(s):
 
 
 if __name__ == "__main__":
+    try:
+        input = raw_input
+    except NameError:
+        pass
+
     print("Enter a word or phrase to find its longest palindrome")
     while True:
         print(longest_palindrome(input("> ")))
